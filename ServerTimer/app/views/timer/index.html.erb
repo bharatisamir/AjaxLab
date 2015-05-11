@@ -1,0 +1,13 @@
+<h1>Server Timer</h1>
+
+<table class="table">
+  <tr class="success">
+    <td><h2>The current time is:</h2> </td> <td><h3 id="server_time"><%=Time.now%></h3></td>
+  </tr>
+  <tr class="info">
+    <td><%=link_to 'Update Time',{:controller=>'timer',:action =>'index'}, remote: true, method: :get%></td>
+  </tr>
+
+</table>
+
+
